@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radomir Mazoń - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langBtn" onclick="toggleLanguage()">PL</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1 id="name-data"></h1>
+        <p class="subtitle" data-en="Full Stack Developer - Java, Angular" data-pl="Full Stack Developer - Java, Angular">
+            Full Stack Developer - Java, Angular
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="photo-container">
+                <div class="photo-placeholder">
+                    <span>PHOTO</span>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3 data-en="Personal Details" data-pl="Dane osobowe">Personal Details</h3>
+
+                <div class="info-item">
+                    <strong data-en="Year of Birth" data-pl="Rok urodzenia">Year of Birth</strong>
+                    <p>1981</p>
+                </div>
+
+                <div class="info-item">
+                    <strong data-en="Address" data-pl="Adres">Address</strong>
+                    <p>Warsaw, Poland</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>Phone</strong>
+                    <p id="phone-data"></p>
+                </div>
+
+                <div class="info-item">
+                    <strong>Email</strong>
+                    <p id="email-data"></p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3 data-en="Languages" data-pl="Języki">Languages</h3>
+
+                <div class="info-item">
+                    <div class="language-item">
+                        <strong data-en="Polish" data-pl="Polski">Polish</strong>
+                        <span data-en="Native" data-pl="Ojczysty">Native</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="language-item">
+                        <strong data-en="English" data-pl="Angielski">English</strong>
+                        <span data-en="Advanced (C1)" data-pl="Zaawansowany (C1)">Advanced (C1)</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Content -->
+        <main class="content">
+            <!-- Experience Section -->
+            <section class="cv-section">
+                <h2 data-en="Experience" data-pl="Doświadczenie">Experience</h2>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>EG A.S.</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title">Senior Software Developer</span>
+                        </div>
+                        <span class="date">08.2022 - Present</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="Java Spring, PostgreSQL, Angular, AngularJS, Hibernate, jooq, Apache Camel"
+                           data-pl="Java Spring, PostgreSQL, Angular, AngularJS, Hibernate, jooq, Apache Camel">
+                            Java Spring, PostgreSQL, Angular, AngularJS, Hibernate, jooq, Apache Camel
+                        </p>
+                    </div>
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Inventory and Pricing Management System" data-pl="System zarządzania produktami i cenami">Inventory and Pricing Management System</span>,
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Inventory and Pricing Management System" data-pl="System zarządzania produktami i cenami">Inventory and Pricing Management System</h4>
+                            <p class="project-description"
+                               data-en="Member of the Scum team. Maintaining and developing a product, pricing, and promotion management system for Norwegian building supply industry. Integrating with multiple data sources, including nobb.no. Integrating with client ERP and POS systems."
+                               data-pl="Członek zespołu scum. Utrzymanie i rozwój systemu zarządzania produktami, cenami i promocjami dla norweskiego sektora materiałów budowlanych. Integracja z wieloma źródłami danych, w tym nobb.no. Integracja z systemami ERP i POS klienta.">
+                                Member of the Scum team. Maintaining and developing a product, pricing, and promotion management system for Norwegian building supply industry. Integrating with multiple data sources, including nobb.no. Integrating with client ERP and POS systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>Thorium Space S.A.</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Full-Stack Developer, Architect" data-pl="Full-Stack Developer, Architekt">Full-Stack Developer, Architect</span>
+                        </div>
+                        <span class="date">02.2018 - Present</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="Java Spring Boot, Microservices/MQ architecture, OAuth2, MongoDB, Angular"
+                           data-pl="Java Spring Boot, Architektura mikroserwisów/MQ, OAuth2, MongoDB, Angular">
+                            Java Spring Boot, Microservices/MQ architecture, OAuth2, MongoDB, Angular
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Mission Control Software" data-pl="Oprogramowanie Centrum Kontroli Misji">Mission Control Software</span>,
+                        <span class="project-name" data-en="Location System" data-pl="System Lokalizacji">Location System</span>,
+                        <span class="project-name" data-en="Antenna Terminal Web Interface" data-pl="Interfejs Webowy Terminala Antenowego">Antenna Terminal Web Interface</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Mission Control Software" data-pl="Oprogramowanie Centrum Kontroli Misji">Mission Control Software</h4>
+                            <p class="project-description"
+                               data-en="Multi-antenna and multi-satellite communications, telemetry, real-time visualization, and tracking of spacecraft positions on Earth."
+                               data-pl="Komunikacja z wieloma antenami i satelitami, telemetria, wizualizacja w czasie rzeczywistym oraz śledzenie pozycji statków kosmicznych na Ziemi.">
+                                Multi-antenna and multi-satellite communications, telemetry, real-time visualization, and tracking of spacecraft positions on Earth.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Location System" data-pl="System Lokalizacji">Location System</h4>
+                            <p class="project-description"
+                               data-en="A tablet application with maps and visualization data received from the rockets."
+                               data-pl="Aplikacja tabletowa z mapami i wizualizacją danych otrzymywanych z rakiet.">
+                                A tablet application with maps and visualization data received from the rockets.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Satellite Terminal Web Interface" data-pl="Interfejs Webowy Terminala Satelitarnego">Satellite Terminal Web Interface</h4>
+                            <p class="project-description"
+                               data-en="Backend/frontend application design presenting all antenna terminal parameters, such as telemetry visualization, 3D model presentation, time domain graphs and the ability to control terminal parameters."
+                               data-pl="Projekt aplikacji backend/frontend, prezentujący wszystkie parametry terminala antenowego, takie jak wizualizacja telemetrii, prezentacja modelu w 3D, wykresy w dziedzinie czasu oraz możliwość kontrolowania parametrów terminala.">
+                                Backend/frontend application design presenting all antenna terminal parameters, such as telemetry visualization, 3D model presentation, time domain graphs and the ability to control terminal parameters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>Liberty Direct / Axa / Uniqa</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Full-Stack Developer" data-pl="Full-Stack Developer">Full-Stack Developer</span>
+                        </div>
+                        <span class="date">04.2013 - 07.2022</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="Java Spring, JBoss, jooq, Tomcat, Microservices (Spring Boot), MQ/Oracle AQ, Angular, AngularJS, GWT, Web Services"
+                           data-pl="Java Spring, JBoss, jooq, Tomcat, Mikroserwisy (Spring Boot), MQ/Oracle AQ, Angular, AngularJS, GWT, Web Services">
+                            Java Spring, JBoss, jooq, Tomcat, Microservices (Spring Boot), MQ/Oracle AQ, Angular, AngularJS, GWT, Web Services
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Core Middleware and Frontend Systems for Insurance Policy" data-pl="Podstawowe Systemy Middleware i Frontend dla Polis Ubezpieczeniowych">Core Middleware and Frontend Systems for Insurance Policy</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Core Middleware and Frontend Systems for Insurance Policy" data-pl="Podstawowe Systemy Middleware i Frontend dla Polis Ubezpieczeniowych">Core Middleware and Frontend Systems for Insurance Policy</h4>
+                            <p class="project-description"
+                               data-en="Scrum team member responsible for maintenance and development of core insurance systems. Analysis and resolution of production problems. Implementation of new features and system improvements."
+                               data-pl="Członek zespołu scrumowego odpowiedzialny za utrzymanie i rozwój podstawowych systemów ubezpieczeniowych. Analiza i rozwiązywanie problemów produkcyjnych. Implementacja nowych funkcjonalności i ulepszeń systemu.">
+                                Scrum team member responsible for maintenance and development of core insurance systems. Analysis and resolution of production problems. Implementation of new features and system improvements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>Hicron</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Full-Stack Developer" data-pl="Full-Stack Developer">Full-Stack Developer</span>
+                        </div>
+                        <span class="date">06.2012 - 03.2013</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="Spring MVC/Roo, jQuery Mobile, PhoneGap, Oracle DB, Struts"
+                           data-pl="Spring MVC/Roo, jQuery Mobile, PhoneGap, Oracle DB, Struts">
+                            Spring MVC/Roo, jQuery Mobile, PhoneGap, Oracle DB, Struts
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Mobile Application for Automotive Industry" data-pl="Aplikacja Mobilna dla Branży Motoryzacyjnej">Mobile Application for Automotive Industry</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Mobile Application for Automotive Industry" data-pl="Aplikacja Mobilna dla Branży Motoryzacyjnej">Mobile Application for Automotive Industry</h4>
+                            <p class="project-description"
+                               data-en="Development of new mobile application for the automotive industry. Team member responsible for maintenance of existing systems and implementation of new features."
+                               data-pl="Rozwój nowej aplikacji mobilnej dla branży motoryzacyjnej. Członek zespołu odpowiedzialny za utrzymanie istniejących systemów i implementację nowych funkcjonalności.">
+                                Development of new mobile application for the automotive industry. Team member responsible for maintenance of existing systems and implementation of new features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>Casus Finanse (Lindorff)</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Team Leader, Architect" data-pl="Lider Zespołu, Architekt">Team Leader, Architect</span>
+                        </div>
+                        <span class="date">12.2010 - 05.2012</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="PostgreSQL, Hibernate, Spring, Swing, GWT, Asterisk"
+                           data-pl="PostgreSQL, Hibernate, Spring, Swing, GWT, Asterisk">
+                            PostgreSQL, Hibernate, Spring, Swing, GWT, Asterisk
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Debt Collection System" data-pl="System Windykacji">Debt Collection System</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Debt Collection System" data-pl="System Windykacji">Debt Collection System</h4>
+                            <p class="project-description"
+                               data-en="Designing the architecture of the debt collection system. Maintenance of existing desktop application, mass mailing system, and call center system."
+                               data-pl="Projektowanie architektury systemu windykacji. Utrzymanie istniejącej aplikacji desktopowej, systemu masowej wysyłki oraz systemu call center.">
+                                Designing the architecture of the debt collection system. Maintenance of existing desktop application, mass mailing system, and call center system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>ERIF Register of Debtors Credit Information Bureau</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Team Leader, Architect" data-pl="Lider Zespołu, Architekt">Team Leader, Architect</span>
+                        </div>
+                        <span class="date">08.2008 - 11.2010</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="jQuery, Struts 2, Spring, Hibernate, Oracle"
+                           data-pl="jQuery, Struts 2, Spring, Hibernate, Oracle">
+                            jQuery, Struts 2, Spring, Hibernate, Oracle
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Core Register of Debtors System" data-pl="Podstawowy System Rejestru Dłużników">Core Register of Debtors System</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Core Register of Debtors System" data-pl="Podstawowy System Rejestru Dłużników">Core Register of Debtors System</h4>
+                            <p class="project-description"
+                               data-en="Development of core register of debtors system, including both frontend and backend components. Architecture design and team leadership for credit information bureau platform."
+                               data-pl="Rozwój podstawowego systemu rejestru dłużników, obejmującego komponenty frontend i backend. Projektowanie architektury i kierowanie zespołem dla platformy biura informacji kredytowej.">
+                                Development of core register of debtors system, including both frontend and backend components. Architecture design and team leadership for credit information bureau platform.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div class="title-line">
+                            <h3>Eurobank</h3>
+                            <span class="separator">  </span>
+                            <span class="job-title" data-en="Full-Stack Developer" data-pl="Full-Stack Developer">Full-Stack Developer</span>
+                        </div>
+                        <span class="date">04.2006 - 07.2008</span>
+                    </div>
+
+                    <div class="subsection">
+                        <strong class="subsection-title" data-en="Technologies:" data-pl="Technologie:">Technologies:</strong>
+                        <p class="description"
+                           data-en="Struts 1, Spring, Java, TopLink, Oracle"
+                           data-pl="Struts 1, Spring, Java, TopLink, Oracle">
+                            Struts 1, Spring, Java, TopLink, Oracle
+                        </p>
+                    </div>
+
+                    <!-- Projects Summary (collapsed view) -->
+                    <div class="projects-summary">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="project-name" data-en="Main Banking System" data-pl="Główny System Bankowy">Main Banking System</span>,
+                        <span class="project-name" data-en="Cash Deposit Machines API" data-pl="API Wpłatomatów">Cash Deposit Machines API</span>,
+                        <span class="project-name" data-en="Debt Collection System" data-pl="System Windykacji">Debt Collection System</span>
+                        <span class="projects-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                    </div>
+
+                    <!-- Projects Details (expanded view) -->
+                    <div class="projects-details">
+                        <strong class="subsection-title" data-en="Projects:" data-pl="Projekty:">Projects:</strong>
+                        <span class="projects-toggle" data-en="less..." data-pl="mniej...">less...</span>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Main Banking System" data-pl="Główny System Bankowy">Main Banking System</h4>
+                            <p class="project-description"
+                               data-en="Development and maintenance of the main banking system. Team member responsible for implementing new features and system improvements."
+                               data-pl="Rozwój i utrzymanie głównego systemu bankowego. Członek zespołu odpowiedzialny za implementację nowych funkcjonalności i ulepszeń systemu.">
+                                Development and maintenance of the main banking system. Team member responsible for implementing new features and system improvements.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Cash Deposit Machines API" data-pl="API Wpłatomatów">Cash Deposit Machines API</h4>
+                            <p class="project-description"
+                               data-en="Implementation of API for cash deposit machines integration with the banking system."
+                               data-pl="Implementacja API do integracji wpłatomatów z systemem bankowym.">
+                                Implementation of API for cash deposit machines integration with the banking system.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4 class="project-title" data-en="Debt Collection System" data-pl="System Windykacji">Debt Collection System</h4>
+                            <p class="project-description"
+                               data-en="Development of debt collection system for managing overdue payments and customer communications."
+                               data-pl="Rozwój systemu windykacji do zarządzania zaległymi płatnościami i komunikacją z klientami.">
+                                Development of debt collection system for managing overdue payments and customer communications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses and Training Section -->
+            <section class="cv-section">
+                <h2 data-en="Courses and Training" data-pl="Kursy i szkolenia">Courses and Training</h2>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Websecurity Master" data-pl="Websecurity Master">Websecurity Master</h3>
+                        <span class="date">2024</span>
+                    </div>
+                    <p class="company">
+                        <span>securak.pl - </span>
+                        <span class="description" data-en="Web Application Security" data-pl="Bezpieczeństwo aplikacji webowych">Web Application Security</span>
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="NG-Poland Conference" data-pl="Konferencja NG-Poland">NG-Poland Conference</h3>
+                        <span class="date">2019, 2020, 2023</span>
+                    </div>
+                    <p class="company">
+                        <span>NG-Poland - </span>
+                        <span class="description" data-en="Angular conference with workshops and presentations" data-pl="Konferencja Angular z warsztatami i prezentacjami">Angular conference with workshops and presentations</span>
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="NgRx Store + ComponentStore - Master Class" data-pl="NgRx Store + ComponentStore - Master Class">NgRx Store + ComponentStore - Master Class</h3>
+                        <span class="date">2020, 2023</span>
+                    </div>
+                    <p class="company">
+                        <span>Workshop - </span>
+                        <span class="description" data-en="Advanced state management in Angular applications" data-pl="Zaawansowane zarządzanie stanem w aplikacjach Angular">Advanced state management in Angular applications</span>
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Reactive Architecture and UX Patterns - Master Class" data-pl="Reaktywna Architektura i Wzorce UX - Master Class">Reactive Architecture and UX Patterns - Master Class</h3>
+                        <span class="date">2020</span>
+                    </div>
+                    <p class="company">
+                        <span>Workshop - </span>
+                        <span class="description" data-en="Reactive programming patterns and user experience design" data-pl="Wzorce programowania reaktywnego i projektowania doświadczenia użytkownika">Reactive programming patterns and user experience design</span>
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Mastering OO Design Patterns TypeScript - Master Class" data-pl="Opanowanie Wzorców Projektowych OO w TypeScript - Master Class">Mastering OO Design Patterns TypeScript - Master Class</h3>
+                        <span class="date">2020</span>
+                    </div>
+                    <p class="company">
+                        <span data-en="Webinar - " data-pl="Webinar - ">Webinar - </span>
+                        <span class="description" data-en="Object-oriented design patterns in TypeScript" data-pl="Wzorce projektowe obiektowe w TypeScript">Object-oriented design patterns in TypeScript</span>
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Security Web Application" data-pl="Bezpieczeństwo Aplikacji Webowych">Security Web Application</h3>
+                        <span class="date">2019</span>
+                    </div>
+                    <p class="company">
+                        <span>securak.pl - </span>
+                        <span class="description" data-en="OAuth2, WebAPI, and Web Application Security" data-pl="OAuth2, WebAPI i bezpieczeństwo aplikacji webowych">OAuth2, WebAPI, and Web Application Security</span>
+                    </p>
+                </div>
+
+                <!-- Toggle button for older courses -->
+                <div class="courses-toggle-container">
+                    <span class="courses-toggle" data-en="more..." data-pl="więcej...">more...</span>
+                </div>
+
+                <!-- Older courses (hidden by default) -->
+                <div class="older-courses">
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h3 data-en="Agile Methodology and Scrum" data-pl="Metodologia Agile i Scrum">Agile Methodology and Scrum</h3>
+                            <span class="date">2012</span>
+                        </div>
+                        <p class="company">
+                            <span>Workshop - </span>
+                            <span class="description" data-en="Applying Agile methodology and Scrum to an entire organization" data-pl="Zastosowanie metodologii Agile i Scrum w całej organizacji">Applying Agile methodology and Scrum to an entire organization</span>
+                        </p>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h3 data-en="JBoss Enterprise Application Development" data-pl="Rozwój Aplikacji Korporacyjnych JBoss">JBoss Enterprise Application Development</h3>
+                            <span class="date">2010</span>
+                        </div>
+                        <p class="company">
+                            <span>JBoss - </span>
+                            <span class="description" data-en="Enterprise application development using JBoss platform" data-pl="Rozwój aplikacji korporacyjnych przy użyciu platformy JBoss">Enterprise application development using JBoss platform</span>
+                        </p>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h3 data-en="JSPR - Spring Framework" data-pl="JSPR - Framework Spring">JSPR - Spring Framework</h3>
+                            <span class="date">2008</span>
+                        </div>
+                        <p class="company">
+                            <span>JSPR - </span>
+                            <span class="description" data-en="Preparation of applications in Java using the Spring Framework" data-pl="Tworzenie aplikacji w Javie przy użyciu frameworka Spring">Preparation of applications in Java using the Spring Framework</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="cv-section">
+                <h2 data-en="Education" data-pl="Wykształcenie">Education</h2>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Master of Science" data-pl="Magister">Master of Science</h3>
+                        <span class="date">2001 - 2006</span>
+                    </div>
+                    <p class="company" data-en="Wrocław University of Technology, Department of Electronics" data-pl="Politechnika Wrocławska, Wydział Elektroniki">Wrocław University of Technology, Department of Electronics</p>
+                    <p class="description" data-en="Computer Science - Specialist: Software Engineering, Database and Autonomous Systems" data-pl="Informatyka - Specjalizacja: Inżynieria Oprogramowania, Bazy Danych i Systemy Autonomiczne">
+                        Computer Science - Specialist: Software Engineering, Database and Autonomous Systems
+                    </p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 data-en="Technical School" data-pl="Technikum">Technical School</h3>
+                        <span class="date">1996 - 2001</span>
+                    </div>
+                    <p class="company" data-en="Electro-Mechanical Technical School in Częstochowa" data-pl="Technikum Elektromechaniczne w Częstochowie">Electro-Mechanical Technical School in Częstochowa</p>
+                    <p class="description" data-en="Speciality: Electronic and Electrical Industrial Automation" data-pl="Specjalność: Elektroniczna i Elektryczna Automatyka Przemysłowa">
+                        Speciality: Electronic and Electrical Industrial Automation
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
